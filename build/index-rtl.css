@@ -1,0 +1,321 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/* ==========================================================================
+   WBD Team Member - Editor-only Styles
+   ========================================================================== */
+/* Layout Picker Grid */
+.wbd-tm-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.wbd-tm-layout-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  min-height: 44px;
+  text-align: center;
+}
+.wbd-tm-layout-btn:hover {
+  border-color: #94a3b8;
+}
+.wbd-tm-layout-btn.is-active {
+  border-color: var(--wp-admin-theme-color, #3858e9);
+  background: rgba(59, 130, 246, 0.04);
+}
+.wbd-tm-layout-btn__label {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+/* Color Swatch Button */
+.wbd-tm-color-button {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  border: 2px solid #e2e8f0;
+  cursor: pointer;
+  padding: 0;
+}
+.wbd-tm-color-button:hover {
+  border-color: #94a3b8;
+}
+/* Member Editor Panels */
+.wbd-tm-member-editor {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.wbd-tm-member-editor--highlighted {
+  border-color: var(--wp-admin-theme-color, #3858e9);
+  background: rgba(59, 130, 246, 0.02);
+}
+.wbd-tm-member-editor__header {
+  padding: 8px 12px 8px 8px;
+  border-bottom: 1px solid #e2e8f0;
+  min-height: 40px;
+}
+.wbd-tm-member-editor__toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  text-decoration: none;
+  color: #1e293b;
+  padding: 0;
+  min-height: auto;
+}
+.wbd-tm-member-editor__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--wp-admin-theme-color, #3858e9);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.wbd-tm-member-editor__title {
+  font-size: 13px;
+  font-weight: 500;
+  flex: 1;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wbd-tm-member-editor__actions {
+  flex-shrink: 0;
+}
+.wbd-tm-member-editor__actions .components-button {
+  margin-right: 4px;
+}
+.wbd-tm-member-editor__body {
+  padding: 12px;
+}
+.wbd-tm-member-editor__image-control {
+  text-align: center;
+}
+.wbd-tm-member-editor__image-preview img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.wbd-tm-member-editor__upload-btn {
+  width: 100%;
+}
+.wbd-tm-inner-panel {
+  border: 0;
+  padding: 0;
+  margin-top: 4px;
+}
+.wbd-tm-inner-panel .components-panel__body-title {
+  border: 0;
+}
+.wbd-tm-inner-panel .components-panel__body-title .components-button {
+  font-size: 12px;
+  padding: 8px 0;
+}
+.wbd-tm-inner-panel .components-panel__body-toggle {
+  padding: 8px 0;
+}
+.wbd-tm-add-member-btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+}
+/* Responsive Columns Control */
+.wbd-tm-responsive-columns {
+  margin-bottom: 16px;
+}
+.wbd-tm-responsive-columns__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.wbd-tm-responsive-columns__label {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1e1e1e;
+}
+.wbd-tm-responsive-columns__tabs {
+  display: flex;
+  gap: 0;
+}
+.wbd-tm-responsive-columns__tabs .components-button {
+  min-width: 32px;
+  height: 28px;
+  padding: 0 6px;
+}
+.wbd-tm-responsive-columns__tabs .components-button.is-primary {
+  z-index: 1;
+}
+.wbd-tm-responsive-columns__tabs .components-button svg {
+  width: 18px;
+  height: 18px;
+}
+/* Slider Editor Preview */
+.wbd-tm-slider-editor-preview__info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  background: #f0f6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1e40af;
+}
+.wbd-tm-slider-editor-preview__info .dashicons {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+.wbd-tm-slider-editor-preview__count {
+  margin-right: auto;
+  font-size: 12px;
+  font-weight: 400;
+  color: #3b82f6;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.wbd-tm-slider-editor-preview__autoplay {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+.wbd-tm-slider-editor-preview__autoplay .dashicons {
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  color: #10b981;
+}
+.wbd-tm-slider-editor-preview .wbd-tm-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--wbd-tm-columns), 1fr);
+  gap: var(--wbd-tm-gap);
+}
+/* Display Mode Switcher */
+.wbd-tm-display-mode__buttons {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+.wbd-tm-display-mode__btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: border-color 0.2s, background 0.2s;
+}
+.wbd-tm-display-mode__btn .dashicons {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+.wbd-tm-display-mode__btn:hover {
+  border-color: #94a3b8;
+}
+.wbd-tm-display-mode__btn.is-active {
+  border-color: var(--wp-admin-theme-color, #3858e9);
+  background: rgba(59, 130, 246, 0.06);
+  color: var(--wp-admin-theme-color, #3858e9);
+}
+/* Categories Preview in Inspector */
+.wbd-tm-categories-preview {
+  margin-top: 12px;
+}
+.wbd-tm-categories-preview__label {
+  font-size: 11px;
+  color: #64748b;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+.wbd-tm-categories-preview__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.wbd-tm-categories-preview__tag {
+  display: inline-block;
+  padding: 3px 10px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #1d4ed8;
+}
+/* Filter Buttons in Editor */
+.wbd-tm-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.wbd-tm-filter__btn {
+  padding: 6px 16px;
+  border: 2px solid var(--wbd-filter-border-color, #e2e8f0);
+  border-radius: var(--wbd-filter-border-radius, 20px);
+  background: var(--wbd-filter-bg-color, #fff);
+  color: var(--wbd-filter-text-color, #475569);
+  font-size: var(--wbd-filter-font-size, 12px);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.wbd-tm-filter__btn:hover {
+  background: var(--wbd-filter-hover-bg, #f1f5f9);
+  border-color: var(--wbd-filter-hover-bg, #f1f5f9);
+  color: var(--wbd-filter-hover-text, var(--wp-admin-theme-color, #3858e9));
+}
+.wbd-tm-filter__btn--active {
+  background: var(--wbd-filter-active-bg, var(--wp-admin-theme-color, #3858e9));
+  border-color: var(--wbd-filter-active-bg, var(--wp-admin-theme-color, #3858e9));
+  color: var(--wbd-filter-active-text, #fff);
+}
+.wbd-tm-filter__btn--active:hover {
+  background: var(--wbd-filter-active-bg, var(--wp-admin-theme-color, #3858e9));
+  color: var(--wbd-filter-active-text, #fff);
+}
+/* Ensure the block edit preview shows nicely */
+.wp-block-wbd-team-member {
+  max-width: 100%;
+}

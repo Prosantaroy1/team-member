@@ -1,0 +1,244 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wbd/team-member",
+  "version": "1.0.0",
+  "title": "WBD Team Member",
+  "category": "design",
+  "icon": "groups",
+  "description": "Showcase your team with beautiful layouts, social links, and business CTA buttons.",
+  "example": {
+    "attributes": {
+      "members": [
+        {
+          "id": "example-1",
+          "name": "Jane Cooper",
+          "designation": "CEO & Founder",
+          "bio": "Visionary leader with 15 years of experience in technology and innovation.",
+          "imageUrl": "",
+          "facebook": "https://facebook.com",
+          "linkedin": "https://linkedin.com",
+          "twitter": "https://twitter.com",
+          "website": "https://example.com",
+          "email": "jane@example.com",
+          "phone": "+1234567890",
+          "whatsapp": "+1234567890",
+          "isHighlighted": true,
+          "badgeText": "Featured",
+          "category": "Management"
+        },
+        {
+          "id": "example-2",
+          "name": "Robert Fox",
+          "designation": "Lead Developer",
+          "bio": "Full-stack developer passionate about clean code and scalable architecture.",
+          "imageUrl": "",
+          "facebook": "",
+          "linkedin": "https://linkedin.com",
+          "twitter": "",
+          "website": "",
+          "email": "robert@example.com",
+          "phone": "",
+          "whatsapp": "",
+          "isHighlighted": false,
+          "category": "Developer"
+        }
+      ],
+      "layout": "corporate",
+      "columns": 2
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "members": {
+      "type": "array",
+      "default": [
+        {
+          "id": "default-1",
+          "name": "Jane Cooper",
+          "designation": "CEO & Founder",
+          "bio": "Visionary leader with 15 years of experience in technology and innovation.",
+          "imageUrl": "",
+          "imageId": 0,
+          "facebook": "https://facebook.com",
+          "linkedin": "https://linkedin.com",
+          "twitter": "https://twitter.com",
+          "website": "https://example.com",
+          "email": "jane@example.com",
+          "phone": "+1234567890",
+          "whatsapp": "",
+          "isHighlighted": true,
+          "badgeText": "Featured",
+          "socialTargetBlank": true,
+          "contactTargetBlank": true,
+          "category": "Management"
+        },
+        {
+          "id": "default-2",
+          "name": "Robert Fox",
+          "designation": "Lead Developer",
+          "bio": "Full-stack developer passionate about clean code and scalable architecture.",
+          "imageUrl": "",
+          "imageId": 0,
+          "facebook": "",
+          "linkedin": "https://linkedin.com",
+          "twitter": "https://twitter.com",
+          "website": "",
+          "email": "robert@example.com",
+          "phone": "",
+          "whatsapp": "",
+          "isHighlighted": false,
+          "socialTargetBlank": true,
+          "contactTargetBlank": true,
+          "category": "Developer"
+        },
+        {
+          "id": "default-3",
+          "name": "Sarah Johnson",
+          "designation": "Design Director",
+          "bio": "Creative designer specializing in user experience and brand identity.",
+          "imageUrl": "",
+          "imageId": 0,
+          "facebook": "https://facebook.com",
+          "linkedin": "https://linkedin.com",
+          "twitter": "",
+          "website": "https://example.com",
+          "email": "sarah@example.com",
+          "phone": "",
+          "whatsapp": "+1234567890",
+          "isHighlighted": false,
+          "socialTargetBlank": true,
+          "contactTargetBlank": true,
+          "category": "Designer"
+        }
+      ]
+    },
+    "displayMode": {
+      "type": "string",
+      "default": "card"
+    },
+    "layout": {
+      "type": "string",
+      "default": "corporate"
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "columnsTablet": {
+      "type": "number",
+      "default": 2
+    },
+    "columnsMobile": {
+      "type": "number",
+      "default": 1
+    },
+    "gap": {
+      "type": "number",
+      "default": 24
+    },
+    "imageShape": {
+      "type": "string",
+      "default": "circle"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#1e293b"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "accentColor": {
+      "type": "string",
+      "default": "#3b82f6"
+    },
+    "hoverColor": {
+      "type": "string",
+      "default": "#2563eb"
+    },
+    "showBio": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSocial": {
+      "type": "boolean",
+      "default": true
+    },
+    "showContact": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableAnimation": {
+      "type": "boolean",
+      "default": true
+    },
+    "slidesToShow": {
+      "type": "number",
+      "default": 3
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 3000
+    },
+    "showFilter": {
+      "type": "boolean",
+      "default": false
+    },
+    "filterFontSize": {
+      "type": "number",
+      "default": 13
+    },
+    "filterTextColor": {
+      "type": "string",
+      "default": "#475569"
+    },
+    "filterBgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "filterBorderColor": {
+      "type": "string",
+      "default": "#e2e8f0"
+    },
+    "filterBorderRadius": {
+      "type": "number",
+      "default": 24
+    },
+    "filterHoverBgColor": {
+      "type": "string",
+      "default": "#f1f5f9"
+    },
+    "filterHoverTextColor": {
+      "type": "string",
+      "default": "#3b82f6"
+    },
+    "filterActiveBgColor": {
+      "type": "string",
+      "default": "#3b82f6"
+    },
+    "filterActiveTextColor": {
+      "type": "string",
+      "default": "#ffffff"
+    }
+  },
+  "textdomain": "wbd-team-member",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
