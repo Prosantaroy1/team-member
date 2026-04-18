@@ -31,50 +31,50 @@ __webpack_require__.r(__webpack_exports__);
 
 const LAYOUTS = [{
   value: 'corporate',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Corporate Clean', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Corporate Clean', 'wpbranddigital-team-showcase')
 }, {
   value: 'agency',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Agency Modern', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Agency Modern', 'wpbranddigital-team-showcase')
 }, {
   value: 'creative',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Creative Hover', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Creative Hover', 'wpbranddigital-team-showcase')
 }, {
   value: 'minimal',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Minimal Card', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Minimal Card', 'wpbranddigital-team-showcase')
 }, {
   value: 'centered',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Centered Profile', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Centered Profile', 'wpbranddigital-team-showcase')
 }, {
   value: 'left-aligned',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Left Aligned', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Left Aligned', 'wpbranddigital-team-showcase')
 }, {
   value: 'dark-mode',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Dark Mode', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Dark Mode', 'wpbranddigital-team-showcase')
 }, {
   value: 'gradient',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Gradient Modern', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Gradient Modern', 'wpbranddigital-team-showcase')
 }, {
   value: 'border-hover',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Border Hover', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Border Hover', 'wpbranddigital-team-showcase')
 }, {
   value: 'image-overlay',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Image Overlay', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Image Overlay', 'wpbranddigital-team-showcase')
 }, {
   value: 'split',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Split Layout', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Split Layout', 'wpbranddigital-team-showcase')
 }, {
   value: 'compact',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Compact Grid', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Compact Grid', 'wpbranddigital-team-showcase')
 }];
 const IMAGE_SHAPES = [{
   value: 'circle',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Circle', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Circle', 'wpbranddigital-team-showcase')
 }, {
   value: 'square',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Square', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Square', 'wpbranddigital-team-showcase')
 }, {
   value: 'rounded',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Rounded', 'wbd-team-member')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Rounded', 'wpbranddigital-team-showcase')
 }];
 function generateId() {
   return 'member-' + Date.now() + '-' + Math.random().toString(36).substring(2, 9);
@@ -271,7 +271,7 @@ function MemberCard({
     },
     children: [member.isHighlighted && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
       className: "wbd-tm-badge",
-      children: member.badgeText || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Featured', 'wbd-team-member')
+      children: member.badgeText || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Featured', 'wpbranddigital-team-showcase')
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: `wbd-tm-image-wrap ${imageShapeClass}`,
       children: [hasImage ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
@@ -316,10 +316,10 @@ function MemberCard({
       className: "wbd-tm-content",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h3", {
         className: "wbd-tm-name",
-        children: member.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Team Member', 'wbd-team-member')
+        children: member.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Team Member', 'wpbranddigital-team-showcase')
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
         className: "wbd-tm-designation",
-        children: member.designation || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Designation', 'wbd-team-member')
+        children: member.designation || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Designation', 'wpbranddigital-team-showcase')
       }), showBio && member.bio && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
         className: "wbd-tm-bio",
         children: member.bio
@@ -353,19 +353,19 @@ function MemberCard({
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(SocialIcon, {
             type: "email",
             size: 14
-          }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Email', 'wbd-team-member')]
+          }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Email', 'wpbranddigital-team-showcase')]
         }), member.phone && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
           className: "wbd-tm-cta wbd-tm-cta--phone",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(SocialIcon, {
             type: "phone",
             size: 14
-          }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Call', 'wbd-team-member')]
+          }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Call', 'wpbranddigital-team-showcase')]
         }), member.whatsapp && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
           className: "wbd-tm-cta wbd-tm-cta--whatsapp",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(SocialIcon, {
             type: "whatsapp",
             size: 14
-          }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('WhatsApp', 'wbd-team-member')]
+          }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('WhatsApp', 'wpbranddigital-team-showcase')]
         })]
       })]
     })]
@@ -398,7 +398,7 @@ function MemberEditor({
           children: index + 1
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
           className: "wbd-tm-member-editor__title",
-          children: member.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('New Member', 'wbd-team-member')
+          children: member.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('New Member', 'wpbranddigital-team-showcase')
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Icon, {
           icon: isOpen ? 'arrow-up-alt2' : 'arrow-down-alt2',
           size: 16
@@ -407,21 +407,21 @@ function MemberEditor({
         spacing: 2,
         className: "wbd-tm-member-editor__actions",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Tooltip, {
-          text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Edit', 'wbd-team-member'),
+          text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Edit', 'wpbranddigital-team-showcase'),
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
             icon: isOpen ? 'arrow-up-alt2' : 'edit',
             size: "small",
             onClick: () => setIsOpen(!isOpen),
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Edit member', 'wbd-team-member')
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Edit member', 'wpbranddigital-team-showcase')
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Tooltip, {
-          text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Remove', 'wbd-team-member'),
+          text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Remove', 'wpbranddigital-team-showcase'),
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
             icon: "trash",
             size: "small",
             isDestructive: true,
             onClick: () => onRemove(index),
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Remove member', 'wbd-team-member')
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Remove member', 'wpbranddigital-team-showcase')
           })
         })]
       })]
@@ -451,7 +451,7 @@ function MemberEditor({
                   variant: "secondary",
                   size: "small",
                   onClick: open,
-                  children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Replace', 'wbd-team-member')
+                  children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Replace', 'wpbranddigital-team-showcase')
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
                   variant: "tertiary",
                   size: "small",
@@ -460,108 +460,108 @@ function MemberEditor({
                     updateField('imageUrl', '');
                     updateField('imageId', 0);
                   },
-                  children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Remove', 'wbd-team-member')
+                  children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Remove', 'wpbranddigital-team-showcase')
                 })]
               })]
             }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
               variant: "secondary",
               onClick: open,
               className: "wbd-tm-member-editor__upload-btn",
-              children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Upload Photo', 'wbd-team-member')
+              children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Upload Photo', 'wpbranddigital-team-showcase')
             })
           })
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Name', 'wbd-team-member'),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Name', 'wpbranddigital-team-showcase'),
         value: member.name,
         onChange: v => updateField('name', v),
         __nextHasNoMarginBottom: true
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Designation', 'wbd-team-member'),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Designation', 'wpbranddigital-team-showcase'),
         value: member.designation,
         onChange: v => updateField('designation', v),
         __nextHasNoMarginBottom: true
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Short Bio', 'wbd-team-member'),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Short Bio', 'wpbranddigital-team-showcase'),
         value: member.bio,
         onChange: v => updateField('bio', v),
         rows: 2,
         __nextHasNoMarginBottom: true
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Category', 'wbd-team-member'),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Category', 'wpbranddigital-team-showcase'),
         value: member.category || '',
         onChange: v => updateField('category', v),
-        help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Used for filter buttons (e.g. Developer, Designer, Manager)', 'wbd-team-member'),
+        help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Used for filter buttons (e.g. Developer, Designer, Manager)', 'wpbranddigital-team-showcase'),
         __nextHasNoMarginBottom: true
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Highlight (Featured Badge)', 'wbd-team-member'),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Highlight (Featured Badge)', 'wpbranddigital-team-showcase'),
         checked: member.isHighlighted,
         onChange: v => updateField('isHighlighted', v),
         __nextHasNoMarginBottom: true
       }), member.isHighlighted && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Badge Text', 'wbd-team-member'),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Badge Text', 'wpbranddigital-team-showcase'),
         value: member.badgeText || 'Featured',
         onChange: v => updateField('badgeText', v),
-        help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Customize the badge label, e.g. "Lead", "Star", "New"', 'wbd-team-member'),
+        help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Customize the badge label, e.g. "Lead", "Star", "New"', 'wpbranddigital-team-showcase'),
         __nextHasNoMarginBottom: true
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Social Links', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Social Links', 'wpbranddigital-team-showcase'),
         initialOpen: false,
         className: "wbd-tm-inner-panel",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Facebook URL', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Facebook URL', 'wpbranddigital-team-showcase'),
           value: member.facebook,
           onChange: v => updateField('facebook', v),
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('LinkedIn URL', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('LinkedIn URL', 'wpbranddigital-team-showcase'),
           value: member.linkedin,
           onChange: v => updateField('linkedin', v),
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Twitter / X URL', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Twitter / X URL', 'wpbranddigital-team-showcase'),
           value: member.twitter,
           onChange: v => updateField('twitter', v),
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Website URL', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Website URL', 'wpbranddigital-team-showcase'),
           value: member.website,
           onChange: v => updateField('website', v),
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Open in New Tab', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Open in New Tab', 'wpbranddigital-team-showcase'),
           checked: member.socialTargetBlank !== false,
           onChange: v => updateField('socialTargetBlank', v),
-          help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Open social links in a new browser tab.', 'wbd-team-member'),
+          help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Open social links in a new browser tab.', 'wpbranddigital-team-showcase'),
           __nextHasNoMarginBottom: true
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Contact Info', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Contact Info', 'wpbranddigital-team-showcase'),
         initialOpen: false,
         className: "wbd-tm-inner-panel",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Email', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Email', 'wpbranddigital-team-showcase'),
           value: member.email,
           onChange: v => updateField('email', v),
           type: "email",
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Phone', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Phone', 'wpbranddigital-team-showcase'),
           value: member.phone,
           onChange: v => updateField('phone', v),
           type: "tel",
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('WhatsApp Number', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('WhatsApp Number', 'wpbranddigital-team-showcase'),
           value: member.whatsapp,
           onChange: v => updateField('whatsapp', v),
           type: "tel",
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Open in New Tab', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Open in New Tab', 'wpbranddigital-team-showcase'),
           checked: member.contactTargetBlank !== false,
           onChange: v => updateField('contactTargetBlank', v),
-          help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Open contact links in a new browser tab.', 'wbd-team-member'),
+          help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Open contact links in a new browser tab.', 'wpbranddigital-team-showcase'),
           __nextHasNoMarginBottom: true
         })]
       })]
@@ -685,7 +685,7 @@ function Edit({
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Display Mode', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Display Mode', 'wpbranddigital-team-showcase'),
         initialOpen: true,
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "wbd-tm-display-mode",
@@ -698,7 +698,7 @@ function Edit({
               }),
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "dashicons dashicons-grid-view"
-              }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Card', 'wbd-team-member')]
+              }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Card', 'wpbranddigital-team-showcase')]
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
               className: `wbd-tm-display-mode__btn${displayMode === 'slider' ? ' is-active' : ''}`,
               onClick: () => setAttributes({
@@ -706,12 +706,12 @@ function Edit({
               }),
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                 className: "dashicons dashicons-slides"
-              }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Slider', 'wbd-team-member')]
+              }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Slider', 'wpbranddigital-team-showcase')]
             })]
           })
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Layout Style', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Layout Style', 'wpbranddigital-team-showcase'),
         initialOpen: true,
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "wbd-tm-layout-grid",
@@ -727,10 +727,10 @@ function Edit({
           }, l.value))
         })
       }), isSlider && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Slider Settings', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Slider Settings', 'wpbranddigital-team-showcase'),
         initialOpen: true,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Slides to Show', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Slides to Show', 'wpbranddigital-team-showcase'),
           value: slidesToShow,
           onChange: v => setAttributes({
             slidesToShow: v
@@ -739,15 +739,15 @@ function Edit({
           max: 4,
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Autoplay', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Autoplay', 'wpbranddigital-team-showcase'),
           checked: autoplay,
           onChange: v => setAttributes({
             autoplay: v
           }),
-          help: autoplay ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Slides advance automatically. Pauses on hover.', 'wbd-team-member') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Enable to auto-advance slides.', 'wbd-team-member'),
+          help: autoplay ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Slides advance automatically. Pauses on hover.', 'wpbranddigital-team-showcase') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Enable to auto-advance slides.', 'wpbranddigital-team-showcase'),
           __nextHasNoMarginBottom: true
         }), autoplay && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Speed (ms)', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Speed (ms)', 'wpbranddigital-team-showcase'),
           value: autoplaySpeed,
           onChange: v => setAttributes({
             autoplaySpeed: v
@@ -755,11 +755,11 @@ function Edit({
           min: 1000,
           max: 10000,
           step: 500,
-          help: autoplaySpeed / 1000 + 's ' + (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('between slides', 'wbd-team-member'),
+          help: autoplaySpeed / 1000 + 's ' + (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('between slides', 'wpbranddigital-team-showcase'),
           __nextHasNoMarginBottom: true
         })]
       }), !isSlider && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Grid Settings', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Grid Settings', 'wpbranddigital-team-showcase'),
         initialOpen: false,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "wbd-tm-responsive-columns",
@@ -767,7 +767,7 @@ function Edit({
             className: "wbd-tm-responsive-columns__header",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
               className: "wbd-tm-responsive-columns__label",
-              children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Columns', 'wbd-team-member')
+              children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Columns', 'wpbranddigital-team-showcase')
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ButtonGroup, {
               className: "wbd-tm-responsive-columns__tabs",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
@@ -775,23 +775,23 @@ function Edit({
                 variant: responsiveDevice === 'desktop' ? 'primary' : 'secondary',
                 onClick: () => setResponsiveDevice('desktop'),
                 icon: "desktop",
-                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Desktop', 'wbd-team-member')
+                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Desktop', 'wpbranddigital-team-showcase')
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
                 size: "small",
                 variant: responsiveDevice === 'tablet' ? 'primary' : 'secondary',
                 onClick: () => setResponsiveDevice('tablet'),
                 icon: "tablet",
-                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Tablet', 'wbd-team-member')
+                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Tablet', 'wpbranddigital-team-showcase')
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
                 size: "small",
                 variant: responsiveDevice === 'mobile' ? 'primary' : 'secondary',
                 onClick: () => setResponsiveDevice('mobile'),
                 icon: "smartphone",
-                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Mobile', 'wbd-team-member')
+                label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Mobile', 'wpbranddigital-team-showcase')
               })]
             })]
           }), responsiveDevice === 'desktop' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Desktop Columns', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Desktop Columns', 'wpbranddigital-team-showcase'),
             value: columns,
             onChange: v => setAttributes({
               columns: v
@@ -800,7 +800,7 @@ function Edit({
             max: 4,
             __nextHasNoMarginBottom: true
           }), responsiveDevice === 'tablet' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Tablet Columns', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Tablet Columns', 'wpbranddigital-team-showcase'),
             value: columnsTablet,
             onChange: v => setAttributes({
               columnsTablet: v
@@ -809,7 +809,7 @@ function Edit({
             max: 4,
             __nextHasNoMarginBottom: true
           }), responsiveDevice === 'mobile' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Mobile Columns', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Mobile Columns', 'wpbranddigital-team-showcase'),
             value: columnsMobile,
             onChange: v => setAttributes({
               columnsMobile: v
@@ -819,7 +819,7 @@ function Edit({
             __nextHasNoMarginBottom: true
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Gap (px)', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Gap (px)', 'wpbranddigital-team-showcase'),
           value: gap,
           onChange: v => setAttributes({
             gap: v
@@ -829,21 +829,21 @@ function Edit({
           __nextHasNoMarginBottom: true
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Filter & Categories', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Filter & Categories', 'wpbranddigital-team-showcase'),
         initialOpen: false,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Filter Buttons', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Filter Buttons', 'wpbranddigital-team-showcase'),
           checked: showFilter,
           onChange: v => setAttributes({
             showFilter: v
           }),
-          help: showFilter ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Filter buttons are shown. Assign categories to members below.', 'wbd-team-member') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Enable to show category filter buttons above the team grid.', 'wbd-team-member'),
+          help: showFilter ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Filter buttons are shown. Assign categories to members below.', 'wpbranddigital-team-showcase') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Enable to show category filter buttons above the team grid.', 'wpbranddigital-team-showcase'),
           __nextHasNoMarginBottom: true
         }), showFilter && categories.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "wbd-tm-categories-preview",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
             className: "wbd-tm-categories-preview__label",
-            children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Detected categories:', 'wbd-team-member')
+            children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Detected categories:', 'wpbranddigital-team-showcase')
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "wbd-tm-categories-preview__tags",
             children: categories.map(cat => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
@@ -857,13 +857,13 @@ function Edit({
             color: '#94a3b8',
             fontStyle: 'italic'
           },
-          children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('No categories found. Add a category to each team member in the Team Members panel below.', 'wbd-team-member')
+          children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('No categories found. Add a category to each team member in the Team Members panel below.', 'wpbranddigital-team-showcase')
         }), showFilter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Button Style', 'wbd-team-member'),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Button Style', 'wpbranddigital-team-showcase'),
           initialOpen: false,
           className: "wbd-tm-inner-panel",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Font Size (px)', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Font Size (px)', 'wpbranddigital-team-showcase'),
             value: filterFontSize,
             onChange: v => setAttributes({
               filterFontSize: v
@@ -872,7 +872,7 @@ function Edit({
             max: 24,
             __nextHasNoMarginBottom: true
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Border Radius (px)', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Border Radius (px)', 'wpbranddigital-team-showcase'),
             value: filterBorderRadius,
             onChange: v => setAttributes({
               filterBorderRadius: v
@@ -881,43 +881,43 @@ function Edit({
             max: 50,
             __nextHasNoMarginBottom: true
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Text Color', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Text Color', 'wpbranddigital-team-showcase'),
             value: filterTextColor,
             onChange: v => setAttributes({
               filterTextColor: v
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Background', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Background', 'wpbranddigital-team-showcase'),
             value: filterBgColor,
             onChange: v => setAttributes({
               filterBgColor: v
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Border Color', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Border Color', 'wpbranddigital-team-showcase'),
             value: filterBorderColor,
             onChange: v => setAttributes({
               filterBorderColor: v
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Hover Background', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Hover Background', 'wpbranddigital-team-showcase'),
             value: filterHoverBgColor,
             onChange: v => setAttributes({
               filterHoverBgColor: v
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Hover Text Color', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Hover Text Color', 'wpbranddigital-team-showcase'),
             value: filterHoverTextColor,
             onChange: v => setAttributes({
               filterHoverTextColor: v
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Active Background', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Active Background', 'wpbranddigital-team-showcase'),
             value: filterActiveBgColor,
             onChange: v => setAttributes({
               filterActiveBgColor: v
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Active Text Color', 'wbd-team-member'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Active Text Color', 'wpbranddigital-team-showcase'),
             value: filterActiveTextColor,
             onChange: v => setAttributes({
               filterActiveTextColor: v
@@ -925,10 +925,10 @@ function Edit({
           })]
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Card Settings', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Card Settings', 'wpbranddigital-team-showcase'),
         initialOpen: false,
         children: [isSlider && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Gap (px)', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Gap (px)', 'wpbranddigital-team-showcase'),
           value: gap,
           onChange: v => setAttributes({
             gap: v
@@ -937,7 +937,7 @@ function Edit({
           max: 60,
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.SelectControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Image Shape', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Image Shape', 'wpbranddigital-team-showcase'),
           value: imageShape,
           options: IMAGE_SHAPES,
           onChange: v => setAttributes({
@@ -946,59 +946,59 @@ function Edit({
           __nextHasNoMarginBottom: true
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Colors', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Colors', 'wpbranddigital-team-showcase'),
         initialOpen: false,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Text', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Text', 'wpbranddigital-team-showcase'),
           value: textColor,
           onChange: v => setAttributes({
             textColor: v
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Background', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Background', 'wpbranddigital-team-showcase'),
           value: backgroundColor,
           onChange: v => setAttributes({
             backgroundColor: v
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Accent', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Accent', 'wpbranddigital-team-showcase'),
           value: accentColor,
           onChange: v => setAttributes({
             accentColor: v
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(ColorControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Hover', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Hover', 'wpbranddigital-team-showcase'),
           value: hoverColor,
           onChange: v => setAttributes({
             hoverColor: v
           })
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Visibility', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Visibility', 'wpbranddigital-team-showcase'),
         initialOpen: false,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Bio', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Bio', 'wpbranddigital-team-showcase'),
           checked: showBio,
           onChange: v => setAttributes({
             showBio: v
           }),
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Social Links', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Social Links', 'wpbranddigital-team-showcase'),
           checked: showSocial,
           onChange: v => setAttributes({
             showSocial: v
           }),
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Contact Buttons', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Contact Buttons', 'wpbranddigital-team-showcase'),
           checked: showContact,
           onChange: v => setAttributes({
             showContact: v
           }),
           __nextHasNoMarginBottom: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Enable Animations', 'wbd-team-member'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Enable Animations', 'wpbranddigital-team-showcase'),
           checked: enableAnimation,
           onChange: v => setAttributes({
             enableAnimation: v
@@ -1006,7 +1006,7 @@ function Edit({
           __nextHasNoMarginBottom: true
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Team Members', 'wbd-team-member'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Team Members', 'wpbranddigital-team-showcase'),
         initialOpen: true,
         children: [members.map((member, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(MemberEditor, {
           member: member,
@@ -1017,7 +1017,7 @@ function Edit({
           variant: "primary",
           onClick: addMember,
           className: "wbd-tm-add-member-btn",
-          children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('+ Add Team Member', 'wbd-team-member')
+          children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('+ Add Team Member', 'wpbranddigital-team-showcase')
         })]
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
@@ -1045,11 +1045,11 @@ function Edit({
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
           className: "wbd-tm-empty__text",
-          children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Add team members using the sidebar panel to get started.', 'wbd-team-member')
+          children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Add team members using the sidebar panel to get started.', 'wpbranddigital-team-showcase')
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
           variant: "primary",
           onClick: addMember,
-          children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('+ Add First Member', 'wbd-team-member')
+          children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('+ Add First Member', 'wpbranddigital-team-showcase')
         })]
       }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
         children: [showFilter && categories.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
@@ -1069,7 +1069,7 @@ function Edit({
             className: `wbd-tm-filter__btn${activeFilter === 'all' ? ' wbd-tm-filter__btn--active' : ''}`,
             onClick: () => setActiveFilter('all'),
             type: "button",
-            children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('All', 'wbd-team-member')
+            children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('All', 'wpbranddigital-team-showcase')
           }), categories.map(cat => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
             className: `wbd-tm-filter__btn${activeFilter === cat ? ' wbd-tm-filter__btn--active' : ''}`,
             onClick: () => setActiveFilter(cat),
@@ -1082,9 +1082,9 @@ function Edit({
             className: "wbd-tm-slider-editor-preview__info",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
               className: "dashicons dashicons-slides"
-            }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Slider Preview', 'wbd-team-member'), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
+            }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Slider Preview', 'wpbranddigital-team-showcase'), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
               className: "wbd-tm-slider-editor-preview__count",
-              children: [filteredMembers.length, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('slides', 'wbd-team-member'), ' / ', slidesToShow, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('visible', 'wbd-team-member'), autoplay && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
+              children: [filteredMembers.length, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('slides', 'wpbranddigital-team-showcase'), ' / ', slidesToShow, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('visible', 'wpbranddigital-team-showcase'), autoplay && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
                 className: "wbd-tm-slider-editor-preview__autoplay",
                 children: [' \u00b7 ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
                   className: "dashicons dashicons-controls-play"
@@ -1628,7 +1628,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wbd/team-member","version":"1.0.0","title":"WBD Team Member","category":"design","icon":"groups","description":"Showcase your team with beautiful layouts, social links, and business CTA buttons.","example":{"attributes":{"members":[{"id":"example-1","name":"Jane Cooper","designation":"CEO & Founder","bio":"Visionary leader with 15 years of experience in technology and innovation.","imageUrl":"","facebook":"https://facebook.com","linkedin":"https://linkedin.com","twitter":"https://twitter.com","website":"https://example.com","email":"jane@example.com","phone":"+1234567890","whatsapp":"+1234567890","isHighlighted":true,"badgeText":"Featured","category":"Management"},{"id":"example-2","name":"Robert Fox","designation":"Lead Developer","bio":"Full-stack developer passionate about clean code and scalable architecture.","imageUrl":"","facebook":"","linkedin":"https://linkedin.com","twitter":"","website":"","email":"robert@example.com","phone":"","whatsapp":"","isHighlighted":false,"category":"Developer"}],"layout":"corporate","columns":2}},"supports":{"html":false,"align":["wide","full"],"spacing":{"margin":true,"padding":true}},"attributes":{"members":{"type":"array","default":[{"id":"default-1","name":"Jane Cooper","designation":"CEO & Founder","bio":"Visionary leader with 15 years of experience in technology and innovation.","imageUrl":"","imageId":0,"facebook":"https://facebook.com","linkedin":"https://linkedin.com","twitter":"https://twitter.com","website":"https://example.com","email":"jane@example.com","phone":"+1234567890","whatsapp":"","isHighlighted":true,"badgeText":"Featured","socialTargetBlank":true,"contactTargetBlank":true,"category":"Management"},{"id":"default-2","name":"Robert Fox","designation":"Lead Developer","bio":"Full-stack developer passionate about clean code and scalable architecture.","imageUrl":"","imageId":0,"facebook":"","linkedin":"https://linkedin.com","twitter":"https://twitter.com","website":"","email":"robert@example.com","phone":"","whatsapp":"","isHighlighted":false,"socialTargetBlank":true,"contactTargetBlank":true,"category":"Developer"},{"id":"default-3","name":"Sarah Johnson","designation":"Design Director","bio":"Creative designer specializing in user experience and brand identity.","imageUrl":"","imageId":0,"facebook":"https://facebook.com","linkedin":"https://linkedin.com","twitter":"","website":"https://example.com","email":"sarah@example.com","phone":"","whatsapp":"+1234567890","isHighlighted":false,"socialTargetBlank":true,"contactTargetBlank":true,"category":"Designer"}]},"displayMode":{"type":"string","default":"card"},"layout":{"type":"string","default":"corporate"},"columns":{"type":"number","default":3},"columnsTablet":{"type":"number","default":2},"columnsMobile":{"type":"number","default":1},"gap":{"type":"number","default":24},"imageShape":{"type":"string","default":"circle"},"textColor":{"type":"string","default":"#1e293b"},"backgroundColor":{"type":"string","default":"#ffffff"},"accentColor":{"type":"string","default":"#3b82f6"},"hoverColor":{"type":"string","default":"#2563eb"},"showBio":{"type":"boolean","default":true},"showSocial":{"type":"boolean","default":true},"showContact":{"type":"boolean","default":true},"enableAnimation":{"type":"boolean","default":true},"slidesToShow":{"type":"number","default":3},"autoplay":{"type":"boolean","default":false},"autoplaySpeed":{"type":"number","default":3000},"showFilter":{"type":"boolean","default":false},"filterFontSize":{"type":"number","default":13},"filterTextColor":{"type":"string","default":"#475569"},"filterBgColor":{"type":"string","default":"#ffffff"},"filterBorderColor":{"type":"string","default":"#e2e8f0"},"filterBorderRadius":{"type":"number","default":24},"filterHoverBgColor":{"type":"string","default":"#f1f5f9"},"filterHoverTextColor":{"type":"string","default":"#3b82f6"},"filterActiveBgColor":{"type":"string","default":"#3b82f6"},"filterActiveTextColor":{"type":"string","default":"#ffffff"}},"textdomain":"wbd-team-member","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpbranddigital/team-showcase","version":"1.0.0","title":"WPBrandDigital Team Showcase","category":"design","icon":"groups","description":"Showcase your team with beautiful layouts, social links, and business CTA buttons.","example":{"attributes":{"members":[{"id":"example-1","name":"Jane Cooper","designation":"CEO & Founder","bio":"Visionary leader with 15 years of experience in technology and innovation.","imageUrl":"","facebook":"https://facebook.com","linkedin":"https://linkedin.com","twitter":"https://twitter.com","website":"https://example.com","email":"jane@example.com","phone":"+1234567890","whatsapp":"+1234567890","isHighlighted":true,"badgeText":"Featured","category":"Management"},{"id":"example-2","name":"Robert Fox","designation":"Lead Developer","bio":"Full-stack developer passionate about clean code and scalable architecture.","imageUrl":"","facebook":"","linkedin":"https://linkedin.com","twitter":"","website":"","email":"robert@example.com","phone":"","whatsapp":"","isHighlighted":false,"category":"Developer"}],"layout":"corporate","columns":2}},"supports":{"html":false,"align":["wide","full"],"spacing":{"margin":true,"padding":true}},"attributes":{"members":{"type":"array","default":[{"id":"default-1","name":"Jane Cooper","designation":"CEO & Founder","bio":"Visionary leader with 15 years of experience in technology and innovation.","imageUrl":"","imageId":0,"facebook":"https://facebook.com","linkedin":"https://linkedin.com","twitter":"https://twitter.com","website":"https://example.com","email":"jane@example.com","phone":"+1234567890","whatsapp":"","isHighlighted":true,"badgeText":"Featured","socialTargetBlank":true,"contactTargetBlank":true,"category":"Management"},{"id":"default-2","name":"Robert Fox","designation":"Lead Developer","bio":"Full-stack developer passionate about clean code and scalable architecture.","imageUrl":"","imageId":0,"facebook":"","linkedin":"https://linkedin.com","twitter":"https://twitter.com","website":"","email":"robert@example.com","phone":"","whatsapp":"","isHighlighted":false,"socialTargetBlank":true,"contactTargetBlank":true,"category":"Developer"},{"id":"default-3","name":"Sarah Johnson","designation":"Design Director","bio":"Creative designer specializing in user experience and brand identity.","imageUrl":"","imageId":0,"facebook":"https://facebook.com","linkedin":"https://linkedin.com","twitter":"","website":"https://example.com","email":"sarah@example.com","phone":"","whatsapp":"+1234567890","isHighlighted":false,"socialTargetBlank":true,"contactTargetBlank":true,"category":"Designer"}]},"displayMode":{"type":"string","default":"card"},"layout":{"type":"string","default":"corporate"},"columns":{"type":"number","default":3},"columnsTablet":{"type":"number","default":2},"columnsMobile":{"type":"number","default":1},"gap":{"type":"number","default":24},"imageShape":{"type":"string","default":"circle"},"textColor":{"type":"string","default":"#1e293b"},"backgroundColor":{"type":"string","default":"#ffffff"},"accentColor":{"type":"string","default":"#3b82f6"},"hoverColor":{"type":"string","default":"#2563eb"},"showBio":{"type":"boolean","default":true},"showSocial":{"type":"boolean","default":true},"showContact":{"type":"boolean","default":true},"enableAnimation":{"type":"boolean","default":true},"slidesToShow":{"type":"number","default":3},"autoplay":{"type":"boolean","default":false},"autoplaySpeed":{"type":"number","default":3000},"showFilter":{"type":"boolean","default":false},"filterFontSize":{"type":"number","default":13},"filterTextColor":{"type":"string","default":"#475569"},"filterBgColor":{"type":"string","default":"#ffffff"},"filterBorderColor":{"type":"string","default":"#e2e8f0"},"filterBorderRadius":{"type":"number","default":24},"filterHoverBgColor":{"type":"string","default":"#f1f5f9"},"filterHoverTextColor":{"type":"string","default":"#3b82f6"},"filterActiveBgColor":{"type":"string","default":"#3b82f6"},"filterActiveTextColor":{"type":"string","default":"#ffffff"}},"textdomain":"wpbranddigital-team-showcase","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ }
 
@@ -1789,7 +1789,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkwbd_team_member"] = globalThis["webpackChunkwbd_team_member"] || [];
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkwpbranddigital_team_showcase"] = globalThis["webpackChunkwpbranddigital_team_showcase"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

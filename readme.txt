@@ -1,7 +1,7 @@
-=== WBD Team Member ===
+=== BrandDigital Team Showcase ===
 
 Contributors:      wpbranddigital25
-Tags:              block, pricing, table, plans, comparison
+Tags:              block, team-member, Gutenberg, card, slider-card
 Stable tag:        1.0.0
 Requires at least: 6.3
 Tested up to: 6.9
@@ -9,11 +9,11 @@ Requires PHP: 7.2
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Powerful Team Member block for WordPress with beautiful layouts, social links, and CTA buttons to showcase your team professionally.
+Powerful Team Member block for WordPress with beautiful layouts, social links, and CTA buttons.
 
-== Description ==
+BrandDigital Team Showcase is a modern Gutenberg block plugin that lets you create stunning team member showcases without any design or coding skills. Built for agencies, startups, corporate sites, and freelancers who want a premium team section in minutes.
 
-WBD Team Member is a modern Gutenberg block plugin that lets you create stunning team member showcases without any design or coding skills. Built for agencies, startups, corporate sites, and freelancers who want a premium team section in minutes.
+Note: The source code for this plugin is included in the `/src/` directory. Developers can modify the source files and rebuild the plugin using `@wordpress/scripts`.
 
 **Free Features:**
 
@@ -50,10 +50,21 @@ WBD Team Member is a modern Gutenberg block plugin that lets you create stunning
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/wbd-team-member` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/wpbranddigital-team-showcase` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
-3. In the block editor, search for "WBD Team Member" and add it to your page.
+3. In the block editor, search for "WPBrandDigital Team Showcase" and add it to your page.
 4. Add team members, choose a layout, and customize to your liking.
+
+== Development ==
+
+Development repository:
+https://github.com/Prosantaroy1/team-member
+
+Build tools:
+- npm
+- webpack
+
+Source code is available in the repository.
 
 == Frequently Asked Questions ==
 
@@ -82,5 +93,5 @@ Yes, WBD Team Member is designed to work with any properly coded WordPress theme
 
 == Changelog ==
 
-= 0.1.0 =
+= 1.0.0 =
 * Initial release with 4 layouts, full customization, and animation support.

@@ -21,24 +21,24 @@ import { useState, useCallback, useMemo } from '@wordpress/element';
 import './editor.scss'; 
 
 const LAYOUTS = [
-	{ value: 'corporate', label: __( 'Corporate Clean', 'wbd-team-member' ) },
-	{ value: 'agency', label: __( 'Agency Modern', 'wbd-team-member' ) },
-	{ value: 'creative', label: __( 'Creative Hover', 'wbd-team-member' ) },
-	{ value: 'minimal', label: __( 'Minimal Card', 'wbd-team-member' ) },
-	{ value: 'centered', label: __( 'Centered Profile', 'wbd-team-member' ) },
-	{ value: 'left-aligned', label: __( 'Left Aligned', 'wbd-team-member' ) },
-	{ value: 'dark-mode', label: __( 'Dark Mode', 'wbd-team-member' ) },
-	{ value: 'gradient', label: __( 'Gradient Modern', 'wbd-team-member' ) },
-	{ value: 'border-hover', label: __( 'Border Hover', 'wbd-team-member' ) },
-	{ value: 'image-overlay', label: __( 'Image Overlay', 'wbd-team-member' ) },
-	{ value: 'split', label: __( 'Split Layout', 'wbd-team-member' ) },
-	{ value: 'compact', label: __( 'Compact Grid', 'wbd-team-member' ) },
+	{ value: 'corporate', label: __( 'Corporate Clean', 'wpbranddigital-team-showcase' ) },
+	{ value: 'agency', label: __( 'Agency Modern', 'wpbranddigital-team-showcase' ) },
+	{ value: 'creative', label: __( 'Creative Hover', 'wpbranddigital-team-showcase' ) },
+	{ value: 'minimal', label: __( 'Minimal Card', 'wpbranddigital-team-showcase' ) },
+	{ value: 'centered', label: __( 'Centered Profile', 'wpbranddigital-team-showcase' ) },
+	{ value: 'left-aligned', label: __( 'Left Aligned', 'wpbranddigital-team-showcase' ) },
+	{ value: 'dark-mode', label: __( 'Dark Mode', 'wpbranddigital-team-showcase' ) },
+	{ value: 'gradient', label: __( 'Gradient Modern', 'wpbranddigital-team-showcase' ) },
+	{ value: 'border-hover', label: __( 'Border Hover', 'wpbranddigital-team-showcase' ) },
+	{ value: 'image-overlay', label: __( 'Image Overlay', 'wpbranddigital-team-showcase' ) },
+	{ value: 'split', label: __( 'Split Layout', 'wpbranddigital-team-showcase' ) },
+	{ value: 'compact', label: __( 'Compact Grid', 'wpbranddigital-team-showcase' ) },
 ];
 
 const IMAGE_SHAPES = [
-	{ value: 'circle', label: __( 'Circle', 'wbd-team-member' ) },
-	{ value: 'square', label: __( 'Square', 'wbd-team-member' ) },
-	{ value: 'rounded', label: __( 'Rounded', 'wbd-team-member' ) },
+	{ value: 'circle', label: __( 'Circle', 'wpbranddigital-team-showcase' ) },
+	{ value: 'square', label: __( 'Square', 'wpbranddigital-team-showcase' ) },
+	{ value: 'rounded', label: __( 'Rounded', 'wpbranddigital-team-showcase' ) },
 ];
 
 function generateId() {
@@ -183,7 +183,7 @@ function MemberCard( { member, layout, imageShape, textColor, backgroundColor, a
 			} }
 		>
 			{ member.isHighlighted && (
-				<span className="wbd-tm-badge">{ member.badgeText || __( 'Featured', 'wbd-team-member' ) }</span>
+				<span className="wbd-tm-badge">{ member.badgeText || __( 'Featured', 'wpbranddigital-team-showcase' ) }</span>
 			) }
 			<div className={ `wbd-tm-image-wrap ${ imageShapeClass }` }>
 				{ hasImage ? (
@@ -203,8 +203,8 @@ function MemberCard( { member, layout, imageShape, textColor, backgroundColor, a
 				) }
 			</div>
 			<div className="wbd-tm-content">
-				<h3 className="wbd-tm-name">{ member.name || __( 'Team Member', 'wbd-team-member' ) }</h3>
-				<p className="wbd-tm-designation">{ member.designation || __( 'Designation', 'wbd-team-member' ) }</p>
+				<h3 className="wbd-tm-name">{ member.name || __( 'Team Member', 'wpbranddigital-team-showcase' ) }</h3>
+				<p className="wbd-tm-designation">{ member.designation || __( 'Designation', 'wpbranddigital-team-showcase' ) }</p>
 				{ showBio && member.bio && (
 					<p className="wbd-tm-bio">{ member.bio }</p>
 				) }
@@ -221,19 +221,19 @@ function MemberCard( { member, layout, imageShape, textColor, backgroundColor, a
 						{ member.email && (
 							<span className="wbd-tm-cta wbd-tm-cta--email">
 								<SocialIcon type="email" size={ 14 } />
-								{ __( 'Email', 'wbd-team-member' ) }
+								{ __( 'Email', 'wpbranddigital-team-showcase' ) }
 							</span>
 						) }
 						{ member.phone && (
 							<span className="wbd-tm-cta wbd-tm-cta--phone">
 								<SocialIcon type="phone" size={ 14 } />
-								{ __( 'Call', 'wbd-team-member' ) }
+								{ __( 'Call', 'wpbranddigital-team-showcase' ) }
 							</span>
 						) }
 						{ member.whatsapp && (
 							<span className="wbd-tm-cta wbd-tm-cta--whatsapp">
 								<SocialIcon type="whatsapp" size={ 14 } />
-								{ __( 'WhatsApp', 'wbd-team-member' ) }
+								{ __( 'WhatsApp', 'wpbranddigital-team-showcase' ) }
 							</span>
 						) }
 					</div>
@@ -263,26 +263,26 @@ function MemberEditor( { member, index, onChange, onRemove } ) {
 				>
 					<span className="wbd-tm-member-editor__number">{ index + 1 }</span>
 					<span className="wbd-tm-member-editor__title">
-						{ member.name || __( 'New Member', 'wbd-team-member' ) }
+						{ member.name || __( 'New Member', 'wpbranddigital-team-showcase' ) }
 					</span>
 					<Icon icon={ isOpen ? 'arrow-up-alt2' : 'arrow-down-alt2' } size={ 16 } />
 				</Button>
 				<HStack spacing={ 2 } className="wbd-tm-member-editor__actions">
-					<Tooltip text={ __( 'Edit', 'wbd-team-member' ) }>
+					<Tooltip text={ __( 'Edit', 'wpbranddigital-team-showcase' ) }>
 						<Button
 							icon={ isOpen ? 'arrow-up-alt2' : 'edit' }
 							size="small"
 							onClick={ () => setIsOpen( ! isOpen ) }
-							label={ __( 'Edit member', 'wbd-team-member' ) }
+							label={ __( 'Edit member', 'wpbranddigital-team-showcase' ) }
 						/>
 					</Tooltip>
-					<Tooltip text={ __( 'Remove', 'wbd-team-member' ) }>
+					<Tooltip text={ __( 'Remove', 'wpbranddigital-team-showcase' ) }>
 						<Button
 							icon="trash"
 							size="small"
 							isDestructive
 							onClick={ () => onRemove( index ) }
-							label={ __( 'Remove member', 'wbd-team-member' ) }
+							label={ __( 'Remove member', 'wpbranddigital-team-showcase' ) }
 						/>
 					</Tooltip>
 				</HStack>
@@ -304,7 +304,7 @@ function MemberEditor( { member, index, onChange, onRemove } ) {
 											<img src={ member.imageUrl } alt="" />
 											<HStack spacing={ 2 }>
 												<Button variant="secondary" size="small" onClick={ open }>
-													{ __( 'Replace', 'wbd-team-member' ) }
+													{ __( 'Replace', 'wpbranddigital-team-showcase' ) }
 												</Button>
 												<Button
 													variant="tertiary"
@@ -315,13 +315,13 @@ function MemberEditor( { member, index, onChange, onRemove } ) {
 														updateField( 'imageId', 0 );
 													} }
 												>
-													{ __( 'Remove', 'wbd-team-member' ) }
+													{ __( 'Remove', 'wpbranddigital-team-showcase' ) }
 												</Button>
 											</HStack>
 										</div>
 									) : (
 										<Button variant="secondary" onClick={ open } className="wbd-tm-member-editor__upload-btn">
-											{ __( 'Upload Photo', 'wbd-team-member' ) }
+											{ __( 'Upload Photo', 'wpbranddigital-team-showcase' ) }
 										</Button>
 									) }
 								</div>
@@ -329,68 +329,68 @@ function MemberEditor( { member, index, onChange, onRemove } ) {
 						/>
 					</MediaUploadCheck>
 					<TextControl
-						label={ __( 'Name', 'wbd-team-member' ) }
+						label={ __( 'Name', 'wpbranddigital-team-showcase' ) }
 						value={ member.name }
 						onChange={ ( v ) => updateField( 'name', v ) }
 						__nextHasNoMarginBottom
 					/>
 					<TextControl
-						label={ __( 'Designation', 'wbd-team-member' ) }
+						label={ __( 'Designation', 'wpbranddigital-team-showcase' ) }
 						value={ member.designation }
 						onChange={ ( v ) => updateField( 'designation', v ) }
 						__nextHasNoMarginBottom
 					/>
 					<TextareaControl
-						label={ __( 'Short Bio', 'wbd-team-member' ) }
+						label={ __( 'Short Bio', 'wpbranddigital-team-showcase' ) }
 						value={ member.bio }
 						onChange={ ( v ) => updateField( 'bio', v ) }
 						rows={ 2 }
 						__nextHasNoMarginBottom
 					/>
 					<TextControl
-						label={ __( 'Category', 'wbd-team-member' ) }
+						label={ __( 'Category', 'wpbranddigital-team-showcase' ) }
 						value={ member.category || '' }
 						onChange={ ( v ) => updateField( 'category', v ) }
-						help={ __( 'Used for filter buttons (e.g. Developer, Designer, Manager)', 'wbd-team-member' ) }
+						help={ __( 'Used for filter buttons (e.g. Developer, Designer, Manager)', 'wpbranddigital-team-showcase' ) }
 						__nextHasNoMarginBottom
 					/>
 					<ToggleControl
-						label={ __( 'Highlight (Featured Badge)', 'wbd-team-member' ) }
+						label={ __( 'Highlight (Featured Badge)', 'wpbranddigital-team-showcase' ) }
 						checked={ member.isHighlighted }
 						onChange={ ( v ) => updateField( 'isHighlighted', v ) }
 						__nextHasNoMarginBottom
 					/>
 					{ member.isHighlighted && (
 						<TextControl
-							label={ __( 'Badge Text', 'wbd-team-member' ) }
+							label={ __( 'Badge Text', 'wpbranddigital-team-showcase' ) }
 							value={ member.badgeText || 'Featured' }
 							onChange={ ( v ) => updateField( 'badgeText', v ) }
-							help={ __( 'Customize the badge label, e.g. "Lead", "Star", "New"', 'wbd-team-member' ) }
+							help={ __( 'Customize the badge label, e.g. "Lead", "Star", "New"', 'wpbranddigital-team-showcase' ) }
 							__nextHasNoMarginBottom
 						/>
 					) }
-					<PanelBody title={ __( 'Social Links', 'wbd-team-member' ) } initialOpen={ false } className="wbd-tm-inner-panel">
-						<TextControl label={ __( 'Facebook URL', 'wbd-team-member' ) } value={ member.facebook } onChange={ ( v ) => updateField( 'facebook', v ) } __nextHasNoMarginBottom />
-						<TextControl label={ __( 'LinkedIn URL', 'wbd-team-member' ) } value={ member.linkedin } onChange={ ( v ) => updateField( 'linkedin', v ) } __nextHasNoMarginBottom />
-						<TextControl label={ __( 'Twitter / X URL', 'wbd-team-member' ) } value={ member.twitter } onChange={ ( v ) => updateField( 'twitter', v ) } __nextHasNoMarginBottom />
-						<TextControl label={ __( 'Website URL', 'wbd-team-member' ) } value={ member.website } onChange={ ( v ) => updateField( 'website', v ) } __nextHasNoMarginBottom />
+					<PanelBody title={ __( 'Social Links', 'wpbranddigital-team-showcase' ) } initialOpen={ false } className="wbd-tm-inner-panel">
+						<TextControl label={ __( 'Facebook URL', 'wpbranddigital-team-showcase' ) } value={ member.facebook } onChange={ ( v ) => updateField( 'facebook', v ) } __nextHasNoMarginBottom />
+						<TextControl label={ __( 'LinkedIn URL', 'wpbranddigital-team-showcase' ) } value={ member.linkedin } onChange={ ( v ) => updateField( 'linkedin', v ) } __nextHasNoMarginBottom />
+						<TextControl label={ __( 'Twitter / X URL', 'wpbranddigital-team-showcase' ) } value={ member.twitter } onChange={ ( v ) => updateField( 'twitter', v ) } __nextHasNoMarginBottom />
+						<TextControl label={ __( 'Website URL', 'wpbranddigital-team-showcase' ) } value={ member.website } onChange={ ( v ) => updateField( 'website', v ) } __nextHasNoMarginBottom />
 						<ToggleControl
-							label={ __( 'Open in New Tab', 'wbd-team-member' ) }
+							label={ __( 'Open in New Tab', 'wpbranddigital-team-showcase' ) }
 							checked={ member.socialTargetBlank !== false }
 							onChange={ ( v ) => updateField( 'socialTargetBlank', v ) }
-							help={ __( 'Open social links in a new browser tab.', 'wbd-team-member' ) }
+							help={ __( 'Open social links in a new browser tab.', 'wpbranddigital-team-showcase' ) }
 							__nextHasNoMarginBottom
 						/>
 					</PanelBody>
-					<PanelBody title={ __( 'Contact Info', 'wbd-team-member' ) } initialOpen={ false } className="wbd-tm-inner-panel">
-						<TextControl label={ __( 'Email', 'wbd-team-member' ) } value={ member.email } onChange={ ( v ) => updateField( 'email', v ) } type="email" __nextHasNoMarginBottom />
-						<TextControl label={ __( 'Phone', 'wbd-team-member' ) } value={ member.phone } onChange={ ( v ) => updateField( 'phone', v ) } type="tel" __nextHasNoMarginBottom />
-						<TextControl label={ __( 'WhatsApp Number', 'wbd-team-member' ) } value={ member.whatsapp } onChange={ ( v ) => updateField( 'whatsapp', v ) } type="tel" __nextHasNoMarginBottom />
+					<PanelBody title={ __( 'Contact Info', 'wpbranddigital-team-showcase' ) } initialOpen={ false } className="wbd-tm-inner-panel">
+						<TextControl label={ __( 'Email', 'wpbranddigital-team-showcase' ) } value={ member.email } onChange={ ( v ) => updateField( 'email', v ) } type="email" __nextHasNoMarginBottom />
+						<TextControl label={ __( 'Phone', 'wpbranddigital-team-showcase' ) } value={ member.phone } onChange={ ( v ) => updateField( 'phone', v ) } type="tel" __nextHasNoMarginBottom />
+						<TextControl label={ __( 'WhatsApp Number', 'wpbranddigital-team-showcase' ) } value={ member.whatsapp } onChange={ ( v ) => updateField( 'whatsapp', v ) } type="tel" __nextHasNoMarginBottom />
 						<ToggleControl
-							label={ __( 'Open in New Tab', 'wbd-team-member' ) }
+							label={ __( 'Open in New Tab', 'wpbranddigital-team-showcase' ) }
 							checked={ member.contactTargetBlank !== false }
 							onChange={ ( v ) => updateField( 'contactTargetBlank', v ) }
-							help={ __( 'Open contact links in a new browser tab.', 'wbd-team-member' ) }
+							help={ __( 'Open contact links in a new browser tab.', 'wpbranddigital-team-showcase' ) }
 							__nextHasNoMarginBottom
 						/>
 					</PanelBody>
@@ -520,7 +520,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={ __( 'Display Mode', 'wbd-team-member' ) } initialOpen={ true }>
+				<PanelBody title={ __( 'Display Mode', 'wpbranddigital-team-showcase' ) } initialOpen={ true }>
 					<div className="wbd-tm-display-mode">
 						<ButtonGroup className="wbd-tm-display-mode__buttons">
 							<Button
@@ -528,19 +528,19 @@ export default function Edit( { attributes, setAttributes } ) {
 								onClick={ () => setAttributes( { displayMode: 'card' } ) }
 							>
 								<span className="dashicons dashicons-grid-view"></span>
-								{ __( 'Card', 'wbd-team-member' ) }
+								{ __( 'Card', 'wpbranddigital-team-showcase' ) }
 							</Button>
 							<Button
 								className={ `wbd-tm-display-mode__btn${ displayMode === 'slider' ? ' is-active' : '' }` }
 								onClick={ () => setAttributes( { displayMode: 'slider' } ) }
 							>
 								<span className="dashicons dashicons-slides"></span>
-								{ __( 'Slider', 'wbd-team-member' ) }
+								{ __( 'Slider', 'wpbranddigital-team-showcase' ) }
 							</Button>
 						</ButtonGroup>
 					</div>
 				</PanelBody>
-				<PanelBody title={ __( 'Layout Style', 'wbd-team-member' ) } initialOpen={ true }>
+				<PanelBody title={ __( 'Layout Style', 'wpbranddigital-team-showcase' ) } initialOpen={ true }>
 					<div className="wbd-tm-layout-grid">
 						{ LAYOUTS.map( ( l ) => (
 							<Button
@@ -554,9 +554,9 @@ export default function Edit( { attributes, setAttributes } ) {
 					</div>
 				</PanelBody>
 				{ isSlider && (
-					<PanelBody title={ __( 'Slider Settings', 'wbd-team-member' ) } initialOpen={ true }>
+					<PanelBody title={ __( 'Slider Settings', 'wpbranddigital-team-showcase' ) } initialOpen={ true }>
 						<RangeControl
-							label={ __( 'Slides to Show', 'wbd-team-member' ) }
+							label={ __( 'Slides to Show', 'wpbranddigital-team-showcase' ) }
 							value={ slidesToShow }
 							onChange={ ( v ) => setAttributes( { slidesToShow: v } ) }
 							min={ 1 }
@@ -564,32 +564,32 @@ export default function Edit( { attributes, setAttributes } ) {
 							__nextHasNoMarginBottom
 						/>
 						<ToggleControl
-							label={ __( 'Autoplay', 'wbd-team-member' ) }
+							label={ __( 'Autoplay', 'wpbranddigital-team-showcase' ) }
 							checked={ autoplay }
 							onChange={ ( v ) => setAttributes( { autoplay: v } ) }
-							help={ autoplay ? __( 'Slides advance automatically. Pauses on hover.', 'wbd-team-member' ) : __( 'Enable to auto-advance slides.', 'wbd-team-member' ) }
+							help={ autoplay ? __( 'Slides advance automatically. Pauses on hover.', 'wpbranddigital-team-showcase' ) : __( 'Enable to auto-advance slides.', 'wpbranddigital-team-showcase' ) }
 							__nextHasNoMarginBottom
 						/>
 						{ autoplay && (
 							<RangeControl
-								label={ __( 'Speed (ms)', 'wbd-team-member' ) }
+								label={ __( 'Speed (ms)', 'wpbranddigital-team-showcase' ) }
 								value={ autoplaySpeed }
 								onChange={ ( v ) => setAttributes( { autoplaySpeed: v } ) }
 								min={ 1000 }
 								max={ 10000 }
 								step={ 500 }
-								help={ ( autoplaySpeed / 1000 ) + 's ' + __( 'between slides', 'wbd-team-member' ) }
+								help={ ( autoplaySpeed / 1000 ) + 's ' + __( 'between slides', 'wpbranddigital-team-showcase' ) }
 								__nextHasNoMarginBottom
 							/>
 						) }
 					</PanelBody>
 				) }
 				{ ! isSlider && (
-					<PanelBody title={ __( 'Grid Settings', 'wbd-team-member' ) } initialOpen={ false }>
+					<PanelBody title={ __( 'Grid Settings', 'wpbranddigital-team-showcase' ) } initialOpen={ false }>
 						<div className="wbd-tm-responsive-columns">
 							<div className="wbd-tm-responsive-columns__header">
 								<span className="wbd-tm-responsive-columns__label">
-									{ __( 'Columns', 'wbd-team-member' ) }
+									{ __( 'Columns', 'wpbranddigital-team-showcase' ) }
 								</span>
 								<ButtonGroup className="wbd-tm-responsive-columns__tabs">
 									<Button
@@ -597,27 +597,27 @@ export default function Edit( { attributes, setAttributes } ) {
 										variant={ responsiveDevice === 'desktop' ? 'primary' : 'secondary' }
 										onClick={ () => setResponsiveDevice( 'desktop' ) }
 										icon="desktop"
-										label={ __( 'Desktop', 'wbd-team-member' ) }
+										label={ __( 'Desktop', 'wpbranddigital-team-showcase' ) }
 									/>
 									<Button
 										size="small"
 										variant={ responsiveDevice === 'tablet' ? 'primary' : 'secondary' }
 										onClick={ () => setResponsiveDevice( 'tablet' ) }
 										icon="tablet"
-										label={ __( 'Tablet', 'wbd-team-member' ) }
+										label={ __( 'Tablet', 'wpbranddigital-team-showcase' ) }
 									/>
 									<Button
 										size="small"
 										variant={ responsiveDevice === 'mobile' ? 'primary' : 'secondary' }
 										onClick={ () => setResponsiveDevice( 'mobile' ) }
 										icon="smartphone"
-										label={ __( 'Mobile', 'wbd-team-member' ) }
+										label={ __( 'Mobile', 'wpbranddigital-team-showcase' ) }
 									/>
 								</ButtonGroup>
 							</div>
 							{ responsiveDevice === 'desktop' && (
 								<RangeControl
-									label={ __( 'Desktop Columns', 'wbd-team-member' ) }
+									label={ __( 'Desktop Columns', 'wpbranddigital-team-showcase' ) }
 									value={ columns }
 									onChange={ ( v ) => setAttributes( { columns: v } ) }
 									min={ 1 }
@@ -627,7 +627,7 @@ export default function Edit( { attributes, setAttributes } ) {
 							) }
 							{ responsiveDevice === 'tablet' && (
 								<RangeControl
-									label={ __( 'Tablet Columns', 'wbd-team-member' ) }
+									label={ __( 'Tablet Columns', 'wpbranddigital-team-showcase' ) }
 									value={ columnsTablet }
 									onChange={ ( v ) => setAttributes( { columnsTablet: v } ) }
 									min={ 1 }
@@ -637,7 +637,7 @@ export default function Edit( { attributes, setAttributes } ) {
 							) }
 							{ responsiveDevice === 'mobile' && (
 								<RangeControl
-									label={ __( 'Mobile Columns', 'wbd-team-member' ) }
+									label={ __( 'Mobile Columns', 'wpbranddigital-team-showcase' ) }
 									value={ columnsMobile }
 									onChange={ ( v ) => setAttributes( { columnsMobile: v } ) }
 									min={ 1 }
@@ -647,7 +647,7 @@ export default function Edit( { attributes, setAttributes } ) {
 							) }
 						</div>
 						<RangeControl
-							label={ __( 'Gap (px)', 'wbd-team-member' ) }
+							label={ __( 'Gap (px)', 'wpbranddigital-team-showcase' ) }
 							value={ gap }
 							onChange={ ( v ) => setAttributes( { gap: v } ) }
 							min={ 0 }
@@ -656,20 +656,20 @@ export default function Edit( { attributes, setAttributes } ) {
 						/>
 					</PanelBody>
 				) }
-				<PanelBody title={ __( 'Filter & Categories', 'wbd-team-member' ) } initialOpen={ false }>
+				<PanelBody title={ __( 'Filter & Categories', 'wpbranddigital-team-showcase' ) } initialOpen={ false }>
 					<ToggleControl
-						label={ __( 'Show Filter Buttons', 'wbd-team-member' ) }
+						label={ __( 'Show Filter Buttons', 'wpbranddigital-team-showcase' ) }
 						checked={ showFilter }
 						onChange={ ( v ) => setAttributes( { showFilter: v } ) }
 						help={ showFilter
-							? __( 'Filter buttons are shown. Assign categories to members below.', 'wbd-team-member' )
-							: __( 'Enable to show category filter buttons above the team grid.', 'wbd-team-member' )
+							? __( 'Filter buttons are shown. Assign categories to members below.', 'wpbranddigital-team-showcase' )
+							: __( 'Enable to show category filter buttons above the team grid.', 'wpbranddigital-team-showcase' )
 						}
 						__nextHasNoMarginBottom
 					/>
 					{ showFilter && categories.length > 0 && (
 						<div className="wbd-tm-categories-preview">
-							<p className="wbd-tm-categories-preview__label">{ __( 'Detected categories:', 'wbd-team-member' ) }</p>
+							<p className="wbd-tm-categories-preview__label">{ __( 'Detected categories:', 'wpbranddigital-team-showcase' ) }</p>
 							<div className="wbd-tm-categories-preview__tags">
 								{ categories.map( ( cat ) => (
 									<span key={ cat } className="wbd-tm-categories-preview__tag">{ cat }</span>
@@ -679,13 +679,13 @@ export default function Edit( { attributes, setAttributes } ) {
 					) }
 					{ showFilter && categories.length === 0 && (
 						<p style={ { fontSize: '12px', color: '#94a3b8', fontStyle: 'italic' } }>
-							{ __( 'No categories found. Add a category to each team member in the Team Members panel below.', 'wbd-team-member' ) }
+							{ __( 'No categories found. Add a category to each team member in the Team Members panel below.', 'wpbranddigital-team-showcase' ) }
 						</p>
 					) }
 					{ showFilter && (
-						<PanelBody title={ __( 'Button Style', 'wbd-team-member' ) } initialOpen={ false } className="wbd-tm-inner-panel">
+						<PanelBody title={ __( 'Button Style', 'wpbranddigital-team-showcase' ) } initialOpen={ false } className="wbd-tm-inner-panel">
 							<RangeControl
-								label={ __( 'Font Size (px)', 'wbd-team-member' ) }
+								label={ __( 'Font Size (px)', 'wpbranddigital-team-showcase' ) }
 								value={ filterFontSize }
 								onChange={ ( v ) => setAttributes( { filterFontSize: v } ) }
 								min={ 10 }
@@ -693,27 +693,27 @@ export default function Edit( { attributes, setAttributes } ) {
 								__nextHasNoMarginBottom
 							/>
 							<RangeControl
-								label={ __( 'Border Radius (px)', 'wbd-team-member' ) }
+								label={ __( 'Border Radius (px)', 'wpbranddigital-team-showcase' ) }
 								value={ filterBorderRadius }
 								onChange={ ( v ) => setAttributes( { filterBorderRadius: v } ) }
 								min={ 0 }
 								max={ 50 }
 								__nextHasNoMarginBottom
 							/>
-							<ColorControl label={ __( 'Text Color', 'wbd-team-member' ) } value={ filterTextColor } onChange={ ( v ) => setAttributes( { filterTextColor: v } ) } />
-							<ColorControl label={ __( 'Background', 'wbd-team-member' ) } value={ filterBgColor } onChange={ ( v ) => setAttributes( { filterBgColor: v } ) } />
-							<ColorControl label={ __( 'Border Color', 'wbd-team-member' ) } value={ filterBorderColor } onChange={ ( v ) => setAttributes( { filterBorderColor: v } ) } />
-							<ColorControl label={ __( 'Hover Background', 'wbd-team-member' ) } value={ filterHoverBgColor } onChange={ ( v ) => setAttributes( { filterHoverBgColor: v } ) } />
-							<ColorControl label={ __( 'Hover Text Color', 'wbd-team-member' ) } value={ filterHoverTextColor } onChange={ ( v ) => setAttributes( { filterHoverTextColor: v } ) } />
-							<ColorControl label={ __( 'Active Background', 'wbd-team-member' ) } value={ filterActiveBgColor } onChange={ ( v ) => setAttributes( { filterActiveBgColor: v } ) } />
-							<ColorControl label={ __( 'Active Text Color', 'wbd-team-member' ) } value={ filterActiveTextColor } onChange={ ( v ) => setAttributes( { filterActiveTextColor: v } ) } />
+							<ColorControl label={ __( 'Text Color', 'wpbranddigital-team-showcase' ) } value={ filterTextColor } onChange={ ( v ) => setAttributes( { filterTextColor: v } ) } />
+							<ColorControl label={ __( 'Background', 'wpbranddigital-team-showcase' ) } value={ filterBgColor } onChange={ ( v ) => setAttributes( { filterBgColor: v } ) } />
+							<ColorControl label={ __( 'Border Color', 'wpbranddigital-team-showcase' ) } value={ filterBorderColor } onChange={ ( v ) => setAttributes( { filterBorderColor: v } ) } />
+							<ColorControl label={ __( 'Hover Background', 'wpbranddigital-team-showcase' ) } value={ filterHoverBgColor } onChange={ ( v ) => setAttributes( { filterHoverBgColor: v } ) } />
+							<ColorControl label={ __( 'Hover Text Color', 'wpbranddigital-team-showcase' ) } value={ filterHoverTextColor } onChange={ ( v ) => setAttributes( { filterHoverTextColor: v } ) } />
+							<ColorControl label={ __( 'Active Background', 'wpbranddigital-team-showcase' ) } value={ filterActiveBgColor } onChange={ ( v ) => setAttributes( { filterActiveBgColor: v } ) } />
+							<ColorControl label={ __( 'Active Text Color', 'wpbranddigital-team-showcase' ) } value={ filterActiveTextColor } onChange={ ( v ) => setAttributes( { filterActiveTextColor: v } ) } />
 						</PanelBody>
 					) }
 				</PanelBody>
-				<PanelBody title={ __( 'Card Settings', 'wbd-team-member' ) } initialOpen={ false }>
+				<PanelBody title={ __( 'Card Settings', 'wpbranddigital-team-showcase' ) } initialOpen={ false }>
 					{ isSlider && (
 						<RangeControl
-							label={ __( 'Gap (px)', 'wbd-team-member' ) }
+							label={ __( 'Gap (px)', 'wpbranddigital-team-showcase' ) }
 							value={ gap }
 							onChange={ ( v ) => setAttributes( { gap: v } ) }
 							min={ 0 }
@@ -722,26 +722,26 @@ export default function Edit( { attributes, setAttributes } ) {
 						/>
 					) }
 					<SelectControl
-						label={ __( 'Image Shape', 'wbd-team-member' ) }
+						label={ __( 'Image Shape', 'wpbranddigital-team-showcase' ) }
 						value={ imageShape }
 						options={ IMAGE_SHAPES }
 						onChange={ ( v ) => setAttributes( { imageShape: v } ) }
 						__nextHasNoMarginBottom
 					/>
 				</PanelBody>
-				<PanelBody title={ __( 'Colors', 'wbd-team-member' ) } initialOpen={ false }>
-					<ColorControl label={ __( 'Text', 'wbd-team-member' ) } value={ textColor } onChange={ ( v ) => setAttributes( { textColor: v } ) } />
-					<ColorControl label={ __( 'Background', 'wbd-team-member' ) } value={ backgroundColor } onChange={ ( v ) => setAttributes( { backgroundColor: v } ) } />
-					<ColorControl label={ __( 'Accent', 'wbd-team-member' ) } value={ accentColor } onChange={ ( v ) => setAttributes( { accentColor: v } ) } />
-					<ColorControl label={ __( 'Hover', 'wbd-team-member' ) } value={ hoverColor } onChange={ ( v ) => setAttributes( { hoverColor: v } ) } />
+				<PanelBody title={ __( 'Colors', 'wpbranddigital-team-showcase' ) } initialOpen={ false }>
+					<ColorControl label={ __( 'Text', 'wpbranddigital-team-showcase' ) } value={ textColor } onChange={ ( v ) => setAttributes( { textColor: v } ) } />
+					<ColorControl label={ __( 'Background', 'wpbranddigital-team-showcase' ) } value={ backgroundColor } onChange={ ( v ) => setAttributes( { backgroundColor: v } ) } />
+					<ColorControl label={ __( 'Accent', 'wpbranddigital-team-showcase' ) } value={ accentColor } onChange={ ( v ) => setAttributes( { accentColor: v } ) } />
+					<ColorControl label={ __( 'Hover', 'wpbranddigital-team-showcase' ) } value={ hoverColor } onChange={ ( v ) => setAttributes( { hoverColor: v } ) } />
 				</PanelBody>
-				<PanelBody title={ __( 'Visibility', 'wbd-team-member' ) } initialOpen={ false }>
-					<ToggleControl label={ __( 'Show Bio', 'wbd-team-member' ) } checked={ showBio } onChange={ ( v ) => setAttributes( { showBio: v } ) } __nextHasNoMarginBottom />
-					<ToggleControl label={ __( 'Show Social Links', 'wbd-team-member' ) } checked={ showSocial } onChange={ ( v ) => setAttributes( { showSocial: v } ) } __nextHasNoMarginBottom />
-					<ToggleControl label={ __( 'Show Contact Buttons', 'wbd-team-member' ) } checked={ showContact } onChange={ ( v ) => setAttributes( { showContact: v } ) } __nextHasNoMarginBottom />
-					<ToggleControl label={ __( 'Enable Animations', 'wbd-team-member' ) } checked={ enableAnimation } onChange={ ( v ) => setAttributes( { enableAnimation: v } ) } __nextHasNoMarginBottom />
+				<PanelBody title={ __( 'Visibility', 'wpbranddigital-team-showcase' ) } initialOpen={ false }>
+					<ToggleControl label={ __( 'Show Bio', 'wpbranddigital-team-showcase' ) } checked={ showBio } onChange={ ( v ) => setAttributes( { showBio: v } ) } __nextHasNoMarginBottom />
+					<ToggleControl label={ __( 'Show Social Links', 'wpbranddigital-team-showcase' ) } checked={ showSocial } onChange={ ( v ) => setAttributes( { showSocial: v } ) } __nextHasNoMarginBottom />
+					<ToggleControl label={ __( 'Show Contact Buttons', 'wpbranddigital-team-showcase' ) } checked={ showContact } onChange={ ( v ) => setAttributes( { showContact: v } ) } __nextHasNoMarginBottom />
+					<ToggleControl label={ __( 'Enable Animations', 'wpbranddigital-team-showcase' ) } checked={ enableAnimation } onChange={ ( v ) => setAttributes( { enableAnimation: v } ) } __nextHasNoMarginBottom />
 				</PanelBody>
-				<PanelBody title={ __( 'Team Members', 'wbd-team-member' ) } initialOpen={ true }>
+				<PanelBody title={ __( 'Team Members', 'wpbranddigital-team-showcase' ) } initialOpen={ true }>
 					{ members.map( ( member, index ) => (
 						<MemberEditor
 							key={ member.id }
@@ -752,7 +752,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						/>
 					) ) }
 					<Button variant="primary" onClick={ addMember } className="wbd-tm-add-member-btn">
-						{ __( '+ Add Team Member', 'wbd-team-member' ) }
+						{ __( '+ Add Team Member', 'wpbranddigital-team-showcase' ) }
 					</Button>
 				</PanelBody>
 			</InspectorControls>
@@ -763,10 +763,10 @@ export default function Edit( { attributes, setAttributes } ) {
 							<svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/><path d="M16 3.13a4 4 0 010 7.75M21 21v-1a4 4 0 00-3-3.87"/></svg>
 						</div>
 						<p className="wbd-tm-empty__text">
-							{ __( 'Add team members using the sidebar panel to get started.', 'wbd-team-member' ) }
+							{ __( 'Add team members using the sidebar panel to get started.', 'wpbranddigital-team-showcase' ) }
 						</p>
 						<Button variant="primary" onClick={ addMember }>
-							{ __( '+ Add First Member', 'wbd-team-member' ) }
+							{ __( '+ Add First Member', 'wpbranddigital-team-showcase' ) }
 						</Button>
 					</div>
 				) : (
@@ -791,7 +791,7 @@ export default function Edit( { attributes, setAttributes } ) {
 									onClick={ () => setActiveFilter( 'all' ) }
 									type="button"
 								>
-									{ __( 'All', 'wbd-team-member' ) }
+									{ __( 'All', 'wpbranddigital-team-showcase' ) }
 								</button>
 								{ categories.map( ( cat ) => (
 									<button
@@ -809,11 +809,11 @@ export default function Edit( { attributes, setAttributes } ) {
 							<div className="wbd-tm-slider-editor-preview">
 								<div className="wbd-tm-slider-editor-preview__info">
 									<span className="dashicons dashicons-slides"></span>
-									{ __( 'Slider Preview', 'wbd-team-member' ) }
+									{ __( 'Slider Preview', 'wpbranddigital-team-showcase' ) }
 									<span className="wbd-tm-slider-editor-preview__count">
-										{ filteredMembers.length } { __( 'slides', 'wbd-team-member' ) }
+										{ filteredMembers.length } { __( 'slides', 'wpbranddigital-team-showcase' ) }
 										{ ' / ' }
-										{ slidesToShow } { __( 'visible', 'wbd-team-member' ) }
+										{ slidesToShow } { __( 'visible', 'wpbranddigital-team-showcase' ) }
 										{ autoplay && (
 											<span className="wbd-tm-slider-editor-preview__autoplay">
 												{ ' \u00b7 ' }

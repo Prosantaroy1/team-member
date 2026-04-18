@@ -316,6 +316,6 @@
   color: var(--wbd-filter-active-text, #fff);
 }
 /* Ensure the block edit preview shows nicely */
-.wp-block-wbd-team-member {
+.wp-block-wpbranddigital-team-showcase {
   max-width: 100%;
 }

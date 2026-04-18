@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "wbd/team-member",
+  "name": "wpbranddigital/team-showcase",
   "version": "1.0.0",
-  "title": "WBD Team Member",
+  "title": "WPBrandDigital Team Showcase",
   "category": "design",
   "icon": "groups",
   "description": "Showcase your team with beautiful layouts, social links, and business CTA buttons.",
@@ -236,7 +236,7 @@
       "default": "#ffffff"
     }
   },
-  "textdomain": "wbd-team-member",
+  "textdomain": "wpbranddigital-team-showcase",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
